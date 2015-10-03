@@ -1,0 +1,214 @@
+Aluno: Ismael Nascimento
+
+02)  Faça um programa que receba 2 valores e retorne o maior entre eles.
+
+namespace MaiorValor
+
+{
+
+    class Program
+
+    {
+
+        static void Main(string[] args)
+
+        {
+
+
+
+            int valor1, valor2;
+
+
+
+            Console.Write("Digite o 1° valor: ");
+
+            valor1 = int.Parse(Console.ReadLine());
+
+
+
+            Console.Write("Digite o 2° valor: ");
+
+            valor2 = int.Parse(Console.ReadLine());
+
+
+
+            if (valor1 > valor2)
+
+            {
+
+                Console.WriteLine("O maior valor é: " + valor1);
+
+            }
+
+            else
+
+            {
+
+                Console.WriteLine("O maior valor é: " + valor2);
+
+            }
+
+            Console.ReadKey();
+
+
+
+        }
+
+    }
+
+}
+
+
+
+03)   Faça um programa que receba 4 valores e retorne o menor entre eles.
+
+namespace MenorValor
+
+{
+
+    class Program
+
+    {
+
+        static void Main(string[] args)
+
+        {
+
+
+
+            int valor1, valor2, valor3, valor4;
+
+
+
+            Console.Write("Escreva o 1° valor: ");
+
+            valor1 = int.Parse(Console.ReadLine());
+
+
+
+            Console.Write("Escreva o 2° valor: ");
+
+            valor2 = int.Parse(Console.ReadLine());
+
+
+
+            Console.Write("Escreva o 3° valor: ");
+
+            valor3 = int.Parse(Console.ReadLine());
+
+
+
+            Console.Write("Escreva o 4° valor: ");
+
+            valor4 = int.Parse(Console.ReadLine());
+
+
+
+            if ( (valor1 < valor2) && (valor1 < valor3) && (valor1 < valor4) )
+
+            {
+
+                Console.WriteLine("O menor valor é :" + valor1);
+
+            }
+
+
+
+            if ((valor2 < valor1) && (valor2 < valor3) && (valor2 < valor4))
+
+            {
+
+                Console.WriteLine("O menor valor é :" + valor2);
+
+            }
+
+
+
+            if ((valor3 < valor1) && (valor3 < valor2) && (valor3 < valor4))
+
+            {
+
+                Console.WriteLine("O menor valor é :" + valor1);
+
+            }
+
+
+
+            if ((valor4 < valor1) && (valor4 < valor2) && (valor4 < valor3))
+
+            {
+
+                Console.WriteLine("O menor valor é :" + valor3);
+
+            }
+
+            Console.ReadKey();
+
+
+
+        }
+
+    }
+
+}
+
+
+
+04)   Faça um algoritmo que calcule a média de quatro números introduzidos pelo usuário e mostre o resultado da média como no exemplo.
+
+namespace Media
+
+{
+
+    class Program
+
+    {
+
+        static void Main(string[] args)
+
+        {
+
+            int nota1, nota2, nota3, nota4, media;
+
+
+
+            Console.Write("Digite sua 1° nota :");
+
+            nota1 = int.Parse(Console.ReadLine());
+
+
+
+            Console.Write("Digite sua 2° nota :");
+
+            nota2 = int.Parse(Console.ReadLine());
+
+
+
+            Console.Write("Digite sua 3° nota :");
+
+            nota3 = int.Parse(Console.ReadLine());
+
+
+
+            Console.Write("Digite sua 4° nota :");
+
+            nota4 = int.Parse(Console.ReadLine());
+
+
+
+            media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+
+
+            Console.WriteLine("Sua média é : " + media);
+
+            Console.ReadKey();
+
+
+
+        }
+
+    }
+
+}
+
