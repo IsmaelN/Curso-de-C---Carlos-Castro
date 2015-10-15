@@ -1,0 +1,69 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercicio_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            float fAlturaM, fAlturaF;
+            float fPesoIdealHomem = 53f;
+            float fPesoIdealMulher = 44.7f;
+            char cSexo;
+
+            Console.Write("Diga seu sexo, F ou M : ");
+            cSexo = char.Parse(Console.ReadLine());
+            
+            if (cSexo == 'M' || cSexo == 'm' )
+            {
+                Console.Write("Digite sua altura: ");
+                fAlturaM = float.Parse(Console.ReadLine());
+
+                if( (72.7 * fAlturaM) == fPesoIdealHomem )
+                {
+                    Console.WriteLine("Seu peso: " + (72.7 * fAlturaM));
+                    Console.WriteLine("Peso ideal: 58");
+                    Console.WriteLine("Sr. você esta no peso ideal");
+                }
+                else
+                {
+                    Console.WriteLine("Seu peso: " + (72.7 * fAlturaM));
+                    Console.WriteLine("Peso ideal: 58");
+                    Console.WriteLine("Sr. você não esta no peso ideal");
+                }
+
+                Console.ReadKey();
+
+            }
+
+            if (cSexo == 'F' || cSexo == 'f')
+            {
+                Console.Write("Digite sua altura: ");
+                fAlturaF = float.Parse(Console.ReadLine());
+
+                if ((62.1 * fAlturaF) == fPesoIdealMulher)
+                {
+                    Console.WriteLine("Seu peso: " + (62.1 * fAlturaF));
+                    Console.WriteLine("Peso ideal: 44.7");
+                    Console.WriteLine("Sra. você esta no peso ideal");
+                }
+                else
+                {
+                    Console.WriteLine("Seu peso: " + (62.1 * fAlturaF));
+                    Console.WriteLine("Peso ideal: 44.7");
+                    Console.WriteLine("Sra. você não esta no peso ideal");
+                }
+
+                Console.ReadKey();
+
+            }
+
+
+        }
+    }
+}
